@@ -240,7 +240,7 @@ body {
 }
 
 .sidebar .menu .menu-label {
-    background-color: #ececec;
+    background-color: #e8e8e8;
     color: #2f5ee8;
     font-weight: bold;
     padding: 10px 0 10px 8px
@@ -1857,11 +1857,10 @@ table {
     text-align: center;
 }
 
-.md-card .card-header.card-image {
+.md-card.card-image .card-header {
     background: #eee url(http://www.smallbusinessdoctors.com/wp-content/uploads/2015/09/business-consulting2.jpg) center center;
-    width: 97.2%;
+    width: 96.5%;
     height: 270px;
-    /* border: 1px solid red; */
     text-indent: -9999px;
 }
 
@@ -1926,6 +1925,10 @@ table {
 .card-stats .card-content {
     text-align: right;
     padding-top: 10px;
+}
+
+.card-image .card-content {
+    padding: 30px 20px;
 }
 
 .card-module .card-title {
@@ -2000,9 +2003,17 @@ table {
     color: #9E9E9E;
 }
 
-.details-display h5 {
-    font-size: 1em;
-    font-weight: 600;
+.card-description {
+    line-height: 1.5em;
+}
+
+
+/*COMPANY PAGE*/
+
+.company-page .form-flex .form-group label {
+    font-size: 0.8em;
+    color: #757575;
+    text-transform: uppercase;
 }
 
 
