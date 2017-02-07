@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Wizard GOV app</title>
+    <link href="https://fonts.googleapis.com/css?family=Play:400,700" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/stylo.css">
+</head>
+
+<body class="app-master saph">
+    <header>
+        <div class="header-wrap">
+            <div class="header-logo">
+                <div class="img-wrap">
+                    <img src="img/power-logo-blue.png" alt="">
+                </div>
+            </div>
+
+            <div class="user-options">
+                <ul class="list-wrap">
+                    <li class="dropdown lang m-r-lg">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                            <div class="">
+                                <img class="flag-fitter" src="img/pt.png" alt="">
+                            </div>
+                            <span>PT</span>
+                            <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Inglês</a></li>
+                            <li><a href="#">Espanhol</a></li>
+                            <li><a href="#">Italiano</a></li>
+                            <li><a href="#">Mandarim</a></li>
+                            <li><a href="#">Alemão</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown settings">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                            <div class="">
+                                <i class="fa fa-cog main-icon" aria-hidden="true"></i>
+                            </div>
+                            <span>Definições</span>
+                            <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Entidade</a></li>
+                            <li><a href="#">Utilizadores</a></li>
+                            <li><a href="#">Serviços</a></li>
+                            <li><a href="#">Ajuda</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#"><i class="fa fa-power-off m-r" aria-hidden="true"></i>Sair</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="date-time">
+                <div class="stack">
+                    <div class="icon-wrap">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                    </div>
+                    <span>02/02/2017</span>
+                </div>
+                <div class="stack">
+                    <div class="icon-wrap">
+                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    </div>
+                    <span>19:55:12</span><span class="t-zone">(UTC)</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="app-body">
+        <main class="app-content">
+            <div class="inner-content container-fluid">
+                <div class="content-title">
+                    <div class="titles-area">
+                        <div class="main-title m-b-xs">
+                            <h3 class="main-title">Ajuste Direto - Regime Geral</h3>
+                        </div>
+                        <div class="sub-title">
+                            <span class="label label-primary">1</span>
+                            <span class="">Caracterização do Procedimento</span>
+                        </div>
+                    </div>
+
+                    <div class="actions-area">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default" aria-label="Left Align">
+                              <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                              <span>Seguinte</span>
+                            </button>
+                            <button type="button" class="btn btn-default" aria-label="Left Align">
+                              <i class="fa fa-file-o" aria-hidden="true"></i>
+                              <span>Resumo</span>
+                            </button>
+                            <button type="button" class="btn btn-default" aria-label="Left Align">
+                              <i class="fa fa-times" aria-hidden="true"></i>
+                              <span>Sair</span>
+                            </button>
+                            <button type="button" class="btn btn-default" aria-label="Right Align">
+                              <i class="fa fa-question-circle" aria-hidden="true"></i>
+                              <span>Ajuda</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="dual-content tabs-wrap m-t">
+                            <div class="tabs">
+                                <input type="radio" name="tabs" id="tabone" checked="checked">
+                                <label class="tab-label" for="tabone">Requisição</label>
+                                <div class="tab fit-pad">
+                                    <form method="post">
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6">
+                                                <div class="md-card card-module">
+                                                    <div class="card-header" data-background-color="blue">
+                                                        <i class="fa fa-book" aria-hidden="true"></i>
+                                                    </div>
+                                                    <div class="card-title">
+                                                        <h3 class="title">Dados do Procedimento</h3>
+                                                    </div>
+                                                    <div class="card-content">
+                                                        <div class="form-flex full-display">
+                                                            <div class="form-group">
+                                                                <label for="input1">Numero de referencia do procedimento</label>
+                                                                <input type="text" class="form-control" id="input1" placeholder="Obrigatorio">
+                                                            </div>
+
+                                                            <div class="form-group">
+                                                                <label for="input2">Designação do Procedimento</label>
+                                                                <textarea name="name" rows="2" cols="80" placeholder="Obrigatorio"></textarea>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="input2">Procedimento Precedente</label>
+                                                                <input type="text" class="form-control" id="input2">
+                                                            </div>
+
+                                                            <div class="form-group">
+                                                                <label for="input2">Regime Contratação</label>
+                                                                <select>
+                                                              <option value="volvo">Opçao 1</option>
+                                                              <option value="saab">Opçao 2</option>
+                                                              <option value="opel">Opçao 3</option>
+                                                              <option value="audi">Opçao 4</option>
+                                                            </select>
+                                                            </div>
+
+                                                            <div class="form-group">
+                                                                <label for="input2">Fundamentação da escolha do procedimento</label>
+                                                                <textarea name="name" rows="2" cols="80"></textarea>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-flex inline-display">
+                                                            <div class="form-group m-r">
+                                                                <label for="input3">Data da Decisão de Contratar</label>
+                                                                <input type="text" class="form-control" id="input3" required>
+                                                            </div>
+
+                                                            <div class="form-group at-start">
+                                                                <div class="flex-inline-items">
+                                                                    <p>Finalidade</p>
+                                                                    <ul class="flex-inner">
+                                                                        <li>
+                                                                            <div class="material">
+                                                                                <input id="wiz-check1" type="checkbox">
+                                                                                <label for="wiz-check1"></label>
+                                                                            </div>
+                                                                            <span class="material-cb-label">Contrato Público</span>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="material">
+                                                                                <input id="wiz-check2" type="checkbox">
+                                                                                <label for="wiz-check2"></label>
+                                                                            </div>
+                                                                            <span class="material-cb-label">Acordo-Quadro</span>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+
+                                                            <div class="flex-inline-items">
+                                                                <p>Tipo de Contrato</p>
+                                                                <ul class="flex-inner">
+                                                                    <li>
+                                                                        <div class="material">
+                                                                            <input id="wiz-check_a" type="checkbox">
+                                                                            <label for="wiz-check_a"></label>
+                                                                        </div>
+                                                                        <span class="material-cb-label">Empreitada de Obras Publicas</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="material">
+                                                                            <input id="wiz-check_b" type="checkbox">
+                                                                            <label for="wiz-check_b"></label>
+                                                                        </div>
+                                                                        <span class="material-cb-label">Locação de bens móveis</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="material">
+                                                                            <input id="wiz-check_c" type="checkbox">
+                                                                            <label for="wiz-check_c"></label>
+                                                                        </div>
+                                                                        <span class="material-cb-label">Aquisição de bens móveis</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="material">
+                                                                            <input id="wiz-check_d" type="checkbox">
+                                                                            <label for="wiz-check_d"></label>
+                                                                        </div>
+                                                                        <span class="material-cb-label">Aquisição de serviços</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="material">
+                                                                            <input id="wiz-check_e" type="checkbox">
+                                                                            <label for="wiz-check_e"></label>
+                                                                        </div>
+                                                                        <span class="material-cb-label">Concessão de obras públicas</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="material">
+                                                                            <input id="wiz-check_f" type="checkbox">
+                                                                            <label for="wiz-check_f"></label>
+                                                                        </div>
+                                                                        <span class="material-cb-label">Concessão de serviços públicos</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="material">
+                                                                            <input id="wiz-check_g" type="checkbox">
+                                                                            <label for="wiz-check_g"></label>
+                                                                        </div>
+                                                                        <span class="material-cb-label">Contrato de Sociedade</span>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+
+                                                    </div>
+                                                    <div class="card-footer">
+                                                        <div class="stats is-hidden">
+                                                            <i class="material-icons text-danger">warning</i> <a href="#pablo">Get More Space...</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6">
+                                                <div class="md-card card-module">
+                                                    <div class="card-header" data-background-color="blue">
+                                                        <i class="fa fa-bookmark" aria-hidden="true"></i>
+                                                    </div>
+                                                    <div class="card-title">
+                                                        <h3 class="title">Mais Info</h3>
+                                                    </div>
+                                                    <div class="card-content">
+                                                        <div class="form-flex inline-display">
+                                                            <div class="form-group m-r">
+                                                                <label for="input1">Numero de Cabimento</label>
+                                                                <input type="text" class="form-control" id="input1">
+                                                            </div>
+
+                                                            <div class="form-group m-r">
+                                                                <label for="input1">Data de Cabimento</label>
+                                                                <input type="text" class="form-control" id="input1">
+                                                            </div>
+
+                                                            <div class="form-group">
+                                                                <input type="submit" class="btn btn-info" value="Anexar">
+                                                            </div>
+
+                                                        </div>
+
+                                                        <div class="form-flex full-display">
+                                                            <div class="form-group">
+                                                                <label for="input2">Descrição</label>
+                                                                <textarea name="name" rows="2" cols="80"></textarea>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="flex-inline-items">
+                                                            <p>Finalidade</p>
+                                                            <ul class="flex-inner">
+                                                                <li>
+                                                                    <div class="material">
+                                                                        <input id="wiz-check3" type="checkbox">
+                                                                        <label for="wiz-check3"></label>
+                                                                    </div>
+                                                                    <span class="material-cb-label">Contrato Público</span>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="material">
+                                                                        <input id="wiz-check4" type="checkbox">
+                                                                        <label for="wiz-check4"></label>
+                                                                    </div>
+                                                                    <span class="material-cb-label">Acordo-Quadro</span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="liner m-t-xl">
+                                                            <h5>Classificação</h5>
+                                                        </div>
+                                                        <div class="m-t-sm">
+                                                            <table class="table table-hover">
+                                                                <thead class="text-warning">
+                                                                    <tr>
+                                                                        <th></th>
+                                                                        <th>Vocabulario Principal</th>
+                                                                        <th>Vocabulario Complementar</th>
+                                                                        <th></th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>Objecto Principal</td>
+                                                                        <td>
+                                                                            <div class="input-w-actions">
+                                                                                <input type="text" class="form-control" id="input1">
+                                                                                <i class="fa fa-search"></i>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="input-w-actions">
+                                                                                <input type="text" class="form-control" id="input1">
+                                                                                <i class="fa fa-search"></i>
+                                                                                <i class="fa fa-trash" aria-hidden="true"></i>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>-</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Objectos Complementares</td>
+                                                                        <td>
+                                                                          <div class="input-w-actions">
+                                                                              <input type="text" class="form-control" id="input1">
+                                                                              <i class="fa fa-search"></i>
+                                                                          </div>
+                                                                        </td>
+                                                                        <td>
+                                                                          <div class="input-w-actions">
+                                                                              <input type="text" class="form-control" id="input1">
+                                                                              <i class="fa fa-search"></i>
+                                                                              <i class="fa fa-trash" aria-hidden="true"></i>
+                                                                          </div>
+                                                                        </td>
+                                                                        <td>-</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <div class="form-flex inline-display m-t-lg">
+                                                            <div class="form-group m-r">
+                                                                <label for="input1">Rubrica Orcamental</label>
+                                                                <input type="text" class="form-control" id="input1">
+                                                            </div>
+
+                                                            <div class="form-group">
+                                                                <label for="input2">Preco Base</label>
+                                                                <input type="text" class="form-control" id="input2">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-flex full-display">
+                                                            <div class="form-group">
+                                                                <label for="input2">Designação do Procedimento</label>
+                                                                <textarea name="name" rows="2" cols="80"></textarea>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-footer">
+                                                        <div class="stats is-hidden">
+                                                            <i class="material-icons text-danger">warning</i> <a href="#pablo">Get More Space...</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <input type="radio" name="tabs" id="tabtwo">
+                                <label class="tab-label" for="tabtwo">Fluxo de Aprovações</label>
+                                <div class="tab">
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </main>
+        <nav class="app-main-nav shadow-2">
+            <div class="sidebar affix-selector" id="nav-affix">
+                <aside class="menu">
+                    <p class="main-title">Procedimento</p>
+                    <ul class="menu-list">
+                        <li class="checked active">
+                            <span class="label label-primary">1</span><a href="#">Caracterização</a>
+                        </li>
+                        <li>
+                            <span class="label label-primary">2</span><a href="#">Equipa</a>
+                        </li>
+                        <li>
+                            <span class="label label-primary">3</span><a href="#">Estrutura e Condições</a>
+                        </li>
+                        <li>
+                            <span class="label label-primary">4</span><a href="#">Propostas</a>
+                        </li>
+                        <li>
+                            <span class="label label-primary">5</span><a href="#">Peças do Procedimento</a>
+                        </li>
+                        <li>
+                            <span class="label label-primary">6</span><a class="active-link" href="#">Resumo</a>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+        </nav>
+    </div>
+    <footer>
+        <div class="footer-wrap">
+            <div class="powered">
+                Powered by:
+                <div class="img-power-wrap">
+                    <img src="img/power-logo-blue.png" alt="">
+                </div>
+            </div>
+            <div class="copy">
+                © 2000-2017 Saphety Level - Trusted Services SA. Todos os direitos reservados
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
