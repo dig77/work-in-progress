@@ -20,7 +20,6 @@
                     <img src="img/power-logo-blue.png" alt="">
                 </div>
             </div>
-
             <div class="user-options">
                 <ul class="list-wrap">
                     <li class="dropdown lang m-r-lg">
@@ -156,61 +155,49 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card-footer">
-
-                            </div>
                         </div>
                     </div>
 
                     <div class="col-md-4 col-sm-6">
                         <div class="md-card card-module">
-                            <div class="card-content">
-                                <div class="liner m-t">
-                                    <h5>Os nossos Servicos</h5>
-                                </div>
-                                <div class="flex-inline-items m-t">
-                                    <ul class="flex-inner">
-                                        <li>
-                                            <div class="material">
-                                                <input id="wiz-check_a" type="checkbox">
-                                                <label for="wiz-check_a"></label>
-                                            </div>
-                                            <span class="material-cb-label">Programacao de pacotes de Software</span>
-                                        </li>
-                                        <li>
-                                            <div class="material">
-                                                <input id="wiz-check_b" type="checkbox">
-                                                <label for="wiz-check_b"></label>
-                                            </div>
-                                            <span class="material-cb-label">Desenvolvimento de Software</span>
-                                        </li>
-                                        <li>
-                                            <div class="material">
-                                                <input id="wiz-check_c" type="checkbox">
-                                                <label for="wiz-check_c"></label>
-                                            </div>
-                                            <span class="material-cb-label">Programacao e Analise de Sistemas</span>
-                                        </li>
-                                        <li>
-                                            <div class="material">
-                                                <input id="wiz-check_d" type="checkbox">
-                                                <label for="wiz-check_d"></label>
-                                            </div>
-                                            <span class="material-cb-label">Relacionados com Software</span>
-                                        </li>
-                                        <li>
-                                            <div class="material">
-                                                <input id="wiz-check_e" type="checkbox">
-                                                <label for="wiz-check_e"></label>
-                                            </div>
-                                            <span class="material-cb-label">Relacionados com Internet</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="card-footer">
-                                <div class="stats">
-
+                            <div class="card-content container-fluid">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="liner m-t">
+                                            <h5>Os nossos Servicos</h5>
+                                        </div>
+                                        <div class="catalog-menu">
+                                            <ul>
+                                                <li class="customer-lvl sub-nav">
+                                                    <a href="#" class="idle">
+                                                        <span>TI: Consultoria, desenvolvimento de Software, Internet e apoio</span>
+                                                    </a>
+                                                    <ul>
+                                                        <li class="single-lvl">
+                                                            <a href="#">
+                                                                <span>Programação de pacotes de Software</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="single-lvl">
+                                                            <a href="#">
+                                                                <span>Desenvolvimento de Software à medida</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="single-lvl">
+                                                            <a href="#">
+                                                                <span>Programação e Análise de sistemas</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="single-lvl">
+                                                            <a href="#">
+                                                                <span>Rede Informática</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -284,6 +271,20 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script>
+        //tree view list
+        $('.sub-nav > a').addClass('idle');
+
+        $('.sub-nav > a').click(function() {
+            if ($(this).parent('.sub-nav').hasClass('open')) {
+                $(this).parent('.sub-nav').removeClass('open');
+                $(this).parent('.sub-nav').children('ul').slideUp("slow");
+            } else {
+                $(this).parent('.sub-nav').addClass('open');
+                $(this).parent('.sub-nav').children('ul').slideDown("slow");
+            };
+        });
+    </script>
 </body>
 
 </html>
