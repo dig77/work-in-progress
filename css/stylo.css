@@ -354,6 +354,11 @@ aside .menu-list li:hover {
     justify-content: space-between;
 }
 
+.content-title.simple {
+    border-bottom: none;
+    padding: 0;
+}
+
 .content-title .titles-area .main-title h3 {
     display: inline-block;
     font-size: 1.6em;
