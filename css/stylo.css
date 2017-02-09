@@ -90,6 +90,13 @@ body {
 }
 
 
+/*SUPER cLASSES*/
+
+.no-pad {
+    padding: 0;
+}
+
+
 /*HEADER*/
 
 .header-wrap {
@@ -1866,7 +1873,8 @@ table {
 
 .md-card.card-image .card-header {
     background: #eee url(http://www.smallbusinessdoctors.com/wp-content/uploads/2015/09/business-consulting2.jpg) center center;
-    width: 96.5%;
+    width: 98%;
+    margin: -20px 5px 0 11px;
     height: 270px;
     text-indent: -9999px;
 }
@@ -1949,13 +1957,18 @@ table {
 
 .card-module .card-title.logo {
     text-align: left;
-    padding: 40px 20px;
+    padding: 20px 20px 40px;
 }
 
 .md-card .card-title h3 {
     font-size: 1.5em;
     font-weight: 300;
     line-height: 1.5em
+}
+
+.md-card .card-title .activity {
+    color: #a8a8a8;
+    font-size: 1.1em;
 }
 
 .md-card .card-content {
@@ -2025,6 +2038,16 @@ table {
     font-size: 0.8em;
     color: #757575;
     text-transform: uppercase;
+}
+
+.company-page .book-img {
+    width: 258px;
+    margin: 20px auto;
+}
+
+.company-page .book-img img {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 
@@ -2200,6 +2223,183 @@ table {
 .catalog-menu ul li a+ul li a {
     font-size: 0.8em;
 }
+
+
+/*SLIDER*/
+
+#slider {
+    width: 100%;
+    height: 200px;
+    margin: auto;
+    border-radius: 5px;
+    /*background: #DDD;*/
+    overflow: hidden;
+}
+
+#slider .trigger {
+    cursor: pointer;
+    position: absolute;
+    width: 45px;
+    height: 200px;
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    border: 0;
+    background: transparent;
+}
+
+#slider .trigger:hover {
+    /*background: rgba(255, 255, 255, 0.5);*/
+}
+
+#slider .trigger:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    border-style: solid;
+}
+
+#slider .prev {
+    left: 0;
+    bottom: 0;
+}
+
+#slider .prev:before {
+    left: 25px;
+    border-width: 3px 0 0 3px;
+    border-color: #333 transparent transparent #333;
+    transform: rotate(-45deg);
+}
+
+#slider .next {
+    right: 0;
+    bottom: 0;
+}
+
+#slider .next:before {
+    right: 25px;
+    border-width: 3px 3px 0 0;
+    border-color: #333 #333 transparent transparent;
+    transform: rotate(45deg);
+}
+
+#slider .frame {
+    position: absolute;
+    top: 50px;
+    left: 35px;
+    right: 35px;
+    bottom: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    overflow: hidden;
+}
+
+#slider .frame .item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 20%;
+    height: 100%;
+}
+
+#slider .frame .item .inset {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 10px 5px;
+    overflow: hidden;
+}
+
+
+/*#slider {
+    width: 100%;
+    height: 200px;
+    margin: auto;
+    border-radius: 5px;
+    background: #DDD;
+    overflow: hidden;
+}
+
+#slider .trigger {
+    cursor: pointer;
+    position: absolute;
+    width: 35px;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    border: 0;
+    background: transparent;
+}
+
+#slider .trigger:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+#slider .trigger:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 10px;
+    height: 10px;
+    margin: auto;
+    border-style: solid;
+}
+
+#slider .prev {
+    left: 0;
+    bottom: 0;
+}
+
+#slider .prev:before {
+    left: 5px;
+    border-width: 3px 0 0 3px;
+    border-color: #333 transparent transparent #333;
+    transform: rotate(-45deg);
+}
+
+#slider .next {
+    right: 0;
+    bottom: 0;
+}
+
+#slider .next:before {
+    right: 5px;
+    border-width: 3px 3px 0 0;
+    border-color: #333 #333 transparent transparent;
+    transform: rotate(45deg);
+}
+
+#slider .frame {
+    position: absolute;
+    top: 0;
+    left: 39px;
+    right: 39px;
+    bottom: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    overflow: hidden;
+}
+
+#slider .frame .item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 18%;
+    height: 100%;
+    padding: 0 20px;
+}*/
 
 
 /*QUERIES*/
