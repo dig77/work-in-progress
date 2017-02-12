@@ -4,15 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Welcome to GOV app</title>
-    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css?family=Play:400,700" rel="stylesheet">
-    <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/stylo.css">
 </head>
 
-<body class="app-master">
+<body class="app-master saph">
     <header>
         <div class="header-wrap">
             <div class="header-logo">
@@ -63,13 +61,18 @@
                     <div class="icon-wrap">
                         <i class="fa fa-calendar" aria-hidden="true"></i>
                     </div>
-                    <span>02/02/2017</span>
+                    <div class="d-t-counter m-l-sm">
+                      <span>02/02/2017</span>
+                    </div>
+
                 </div>
                 <div class="stack">
                     <div class="icon-wrap">
                         <i class="fa fa-clock-o" aria-hidden="true"></i>
                     </div>
-                    <span>19:55:12</span><span class="t-zone">(UTC)</span>
+                    <div class="d-t-counter m-l-sm">
+                      <span>19:55:12</span><span class="t-zone">(UTC)</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -78,8 +81,8 @@
         <main class="app-content">
             <div class="inner-content middle">
                 <div class="row">
-                    <div class="col-md-12">
-                        <div class="md-card card-module suppliers">
+                    <div class="col-sm-12">
+                        <div class="md-card card-module suppliers shadow-3">
                             <div class="card-header md" data-background-color="orange">
                                 <i class="fa fa-cubes" aria-hidden="true"></i>
                             </div>
@@ -96,9 +99,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-12">
+                    <div class="col-sm-12">
                         <div class="md-card card-module">
-                            <div class="card-header md" data-background-color="orange">
+                            <div class="card-header" data-background-color="orange">
                                 <i class="fa fa-newspaper-o" aria-hidden="true"></i>
                             </div>
                             <div class="card-title">
@@ -339,9 +342,7 @@
             </div>
         </div>
     </footer>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
 </body>
 

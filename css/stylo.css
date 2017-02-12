@@ -77,20 +77,12 @@ body {
     background-color: #f7f7f7;
 }
 
-.app-main-nav.shadow-1, .app-aux-nav.shadow-1 {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.app-main-nav.shadow-2, .app-aux-nav.shadow-2 {
-    box-shadow: 0 10px 100px -20px rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
-}
-
 .app-main-nav {
     order: -1;
 }
 
 
-/*SUPER cLASSES*/
+/*SUPER CLASSES*/
 
 .no-pad {
     padding: 0;
@@ -103,6 +95,45 @@ body {
 
 .space-between-wrap.center {
     align-items: center;
+}
+
+.shadow-1 {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.shadow-2 {
+    box-shadow: 0 10px 100px -20px rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.shadow-3 {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.23), 0 10px 40px rgba(0, 0, 0, 0.19);
+}
+
+.shadow-4 {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.22), 0 14px 56px rgba(0, 0, 0, 0.25);
+}
+
+.shadow-5 {
+    box-shadow: 0 15px 24px rgba(0, 0, 0, 0.22), 0 19px 76px rgba(0, 0, 0, 0.3);
+}
+
+.performance-shadow {
+    position: relative;
+    -webkit-transition: -webkit-transform 0.2s ease-in-out;
+    transition: -webkit-transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+    will-change: transform;
+    box-shadow: 0 35px 50px -30px rgba(0, 0, 0, 0.2);
+}
+
+.performance-shadow:hover {
+    -webkit-transform: translateY(-5%);
+    transform: translateY(-5%);
+}
+
+.simple-shadow {
+    box-shadow: 0 60px 60px -40px rgba(135, 144, 158, 0.60);
 }
 
 
@@ -218,6 +249,11 @@ body {
     /*box-shadow: 0px 10px 100px -20px rgba(0, 0, 0, 0.3), 0px 6px 20px 0 rgba(0, 0, 0, 0.3);*/
 }
 
+.stack {
+    display: flex;
+    align-items: baseline;
+}
+
 .date-time .stack .icon-wrap {
     display: inline-flex;
     width: 25px;
@@ -313,13 +349,17 @@ body {
     right: 0;
 }
 
+.sidebar.affix-selector .menu .menu-list li.checked:hover::after {
+    color: #fff;
+}
+
 .sidebar.affix-selector .menu .menu-list li .label {
-    margin-left: 10px;
+    margin-right: 5px;
 }
 
 .sidebar.affix-selector .menu .menu-list li a {
     display: inline-block;
-    padding: 20px 10px;
+    padding: 20px 0 20px 10px;
 }
 
 .sidebar.affix-selector .menu .menu-list li.active a {
@@ -394,9 +434,10 @@ aside .menu-list li:hover {
 
 .content-title .titles-area .main-title h3 {
     display: inline-block;
-    font-size: 1.6em;
+    font-size: 1.4em;
     font-weight: 400;
     margin: 0 0 7px;
+    text-transform: uppercase;
 }
 
 .content-title .titles-area .sub-title {
@@ -470,104 +511,6 @@ aside .menu-list li:hover {
 
 .inner-content {
     padding: 2%;
-}
-
-.ibox {
-    clear: both;
-    margin-bottom: 25px;
-    margin-top: 0;
-    padding: 0;
-}
-
-.ibox.no-shadow:hover {
-    box-shadow: none;
-}
-
-.ibox.bordered {
-    border-color: #e7eaec;
-    border-style: solid;
-    border-width: 0px 1px 1px 1px;
-}
-
-.ibox:hover {
-    /*box-shadow: 0 10px 100px -20px rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);*/
-}
-
-.siamese {
-    min-height: 255px;
-}
-
-.ibox-title {
-    -moz-border-bottom-colors: none;
-    -moz-border-left-colors: none;
-    -moz-border-right-colors: none;
-    -moz-border-top-colors: none;
-    background-color: #ffffff;
-    border-color: #e7eaec;
-    border-image: none;
-    border-style: solid solid none;
-    border-width: 2px 0 0;
-    color: inherit;
-    margin-bottom: 0;
-    padding: 15px 15px 7px;
-    min-height: 48px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.ibox-title .ibox-descrip span {
-    text-transform: uppercase;
-    font-size: 0.8em;
-}
-
-.ibox-title .ibox-descrip i {
-    font-size: 1.3em;
-    color: #E0E0E0;
-    padding-right: 5px;
-}
-
-.ibox-title .ibox-tools a {
-    font-size: 0.9em;
-    color: #BDBDBD;
-    /*padding-right: 5px;*/
-    cursor: pointer;
-}
-
-.ibox-title h5 {
-    display: inline-block;
-    font-size: 15px;
-    margin: 0 0 7px;
-    padding: 0;
-    text-overflow: ellipsis;
-    float: left;
-    font-weight: 600;
-}
-
-.ibox-content {
-    background-color: #ffffff;
-    color: inherit;
-    padding: 15px 20px 20px 20px;
-    border-color: #e7eaec;
-    border-image: none;
-    border-style: solid solid none;
-    border-width: 1px 0;
-}
-
-.ibox-footer {
-    color: inherit;
-    border-top: 1px solid #e7eaec;
-    font-size: 90%;
-    background: #ffffff;
-    padding: 10px 15px;
-}
-
-.ibox-content.smaller {
-    font-size: 0.9em;
-}
-
-.ibox-content.scrollable {
-    padding: 0 0 0 20px;
 }
 
 .label {
@@ -1132,7 +1075,7 @@ table {
     margin-right: 0.2rem;
     cursor: pointer;
     background: #f5f5f5;
-    font-weight: 600;
+    font-weight: 400;
     -webkit-transition: background ease 0.2s;
     transition: background ease 0.2s;
     color: #a7a7a7;
@@ -1182,6 +1125,7 @@ table {
     background: whitesmoke;
     border-bottom: 4px solid #FF5722;
     color: #2f5ee8;
+    font-weight: 600;
 }
 
 .tabs input[type="radio"]:checked+label+.tab {
@@ -1902,6 +1846,7 @@ table {
 .md-card.card-image .card-header {
     background: #eee url(http://www.stanvista.com/wp-content/uploads/2015/07/Software-Development.jpg) center center;
     width: 98%;
+    margin: -20px 1% 0;
     height: 250px;
     text-indent: -9999px;
 }
@@ -1974,9 +1919,10 @@ table {
 }
 
 .md-card .card-title h3 {
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: 300;
-    line-height: 1.5em
+    line-height: 1.5em;
+    text-transform: uppercase;
 }
 
 .md-card .card-title .activity {
@@ -2058,19 +2004,20 @@ table {
     color: #fff;
 }
 
+
 /*INDEX PAGE*/
 
 .md-card.suppliers {
-  box-shadow: 0 10px 100px -20px rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    /*box-shadow: 0 10px 100px -20px rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);*/
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.10), 0 14px 56px rgba(0, 0, 0, 0.10);
 }
 
 .md-card.suppliers .card-content h4 {
-  font-size: 1.2em;
+    font-size: 1.2em;
 }
 
-.md-card.suppliers .card-content h5 {
+.md-card.suppliers .card-content h5 {}
 
-}
 
 /*COMPANY PAGE*/
 
@@ -2099,7 +2046,6 @@ table {
 }
 
 
-
 /*COMPANYS GRID*/
 
 .companies-grid .content-title {
@@ -2111,8 +2057,12 @@ table {
     margin: 0;
 }
 
-.companies-grid .selected-wrap h3 {
+.companies-grid .content-title .sub-title span {
     font-size: 0.9em;
+}
+
+.companies-grid .selected-wrap h3 {
+    font-size: 0.8em;
     padding-bottom: 5px;
     text-transform: uppercase;
 }
@@ -2180,7 +2130,7 @@ table {
 .companies-grid .comp-img-logo {
     z-index: 100;
     position: absolute;
-    bottom: 265px;
+    top: 0;
     right: 28px;
     background: #eee url(https://media.glassdoor.com/sql/1909/staples-squarelogo-1459192907590.png);
     width: 100px;
@@ -2206,7 +2156,7 @@ table {
 }
 
 .companies-grid .card-module .card-title .truncate {
-    width: 200px;
+    width: 177px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -2266,7 +2216,7 @@ table {
 }
 
 #slider .card-module .card-title .truncate {
-    width: 150px;
+    width: 133px;
 }
 
 #slider .card-module .card-content .stamp i {

@@ -62,23 +62,28 @@
                     <div class="icon-wrap">
                         <i class="fa fa-calendar" aria-hidden="true"></i>
                     </div>
-                    <span>02/02/2017</span>
+                    <div class="d-t-counter m-l-sm">
+                        <span>02/02/2017</span>
+                    </div>
+
                 </div>
                 <div class="stack">
                     <div class="icon-wrap">
                         <i class="fa fa-clock-o" aria-hidden="true"></i>
                     </div>
-                    <span>19:55:12</span><span class="t-zone">(UTC)</span>
+                    <div class="d-t-counter m-l-sm">
+                        <span>19:55:12</span><span class="t-zone">(UTC)</span>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
     <div class="app-body">
         <main class="app-content">
-            <div class="inner-content container-fluid">
-                <div class="content-title">
+            <div class="inner-content container-fluid wizard">
+                <div class="content-title simple m-t">
                     <div class="titles-area">
-                        <div class="main-title m-b-xs">
+                        <div class="main-title">
                             <h3 class="main-title">Ajuste Direto - Regime Geral</h3>
                         </div>
                         <div class="sub-title">
@@ -108,16 +113,15 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="dual-content tabs-wrap m-t">
+                        <div class="tabs-wrap m-t">
                             <div class="tabs">
                                 <input type="radio" name="tabs" id="tabone" checked="checked">
                                 <label class="tab-label" for="tabone">Requisição</label>
                                 <div class="tab fit-pad">
                                     <form method="post">
-                                        <div class="row">
+                                        <div class="row m-t">
                                             <div class="col-md-6 col-sm-6">
                                                 <div class="md-card card-module">
                                                     <div class="card-header" data-background-color="blue">
@@ -186,60 +190,60 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                            <div class="flex-inline-items">
-                                                                <p>Tipo de Contrato</p>
-                                                                <ul class="flex-inner">
-                                                                    <li>
-                                                                        <div class="material">
-                                                                            <input id="wiz-check_a" type="checkbox">
-                                                                            <label for="wiz-check_a"></label>
-                                                                        </div>
-                                                                        <span class="material-cb-label">Empreitada de Obras Publicas</span>
-                                                                    </li>
-                                                                    <li>
-                                                                        <div class="material">
-                                                                            <input id="wiz-check_b" type="checkbox">
-                                                                            <label for="wiz-check_b"></label>
-                                                                        </div>
-                                                                        <span class="material-cb-label">Locação de bens móveis</span>
-                                                                    </li>
-                                                                    <li>
-                                                                        <div class="material">
-                                                                            <input id="wiz-check_c" type="checkbox">
-                                                                            <label for="wiz-check_c"></label>
-                                                                        </div>
-                                                                        <span class="material-cb-label">Aquisição de bens móveis</span>
-                                                                    </li>
-                                                                    <li>
-                                                                        <div class="material">
-                                                                            <input id="wiz-check_d" type="checkbox">
-                                                                            <label for="wiz-check_d"></label>
-                                                                        </div>
-                                                                        <span class="material-cb-label">Aquisição de serviços</span>
-                                                                    </li>
-                                                                    <li>
-                                                                        <div class="material">
-                                                                            <input id="wiz-check_e" type="checkbox">
-                                                                            <label for="wiz-check_e"></label>
-                                                                        </div>
-                                                                        <span class="material-cb-label">Concessão de obras públicas</span>
-                                                                    </li>
-                                                                    <li>
-                                                                        <div class="material">
-                                                                            <input id="wiz-check_f" type="checkbox">
-                                                                            <label for="wiz-check_f"></label>
-                                                                        </div>
-                                                                        <span class="material-cb-label">Concessão de serviços públicos</span>
-                                                                    </li>
-                                                                    <li>
-                                                                        <div class="material">
-                                                                            <input id="wiz-check_g" type="checkbox">
-                                                                            <label for="wiz-check_g"></label>
-                                                                        </div>
-                                                                        <span class="material-cb-label">Contrato de Sociedade</span>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
+                                                        <div class="flex-inline-items">
+                                                            <p>Tipo de Contrato</p>
+                                                            <ul class="flex-inner">
+                                                                <li>
+                                                                    <div class="material">
+                                                                        <input id="wiz-check_a" type="checkbox">
+                                                                        <label for="wiz-check_a"></label>
+                                                                    </div>
+                                                                    <span class="material-cb-label">Empreitada de Obras Publicas</span>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="material">
+                                                                        <input id="wiz-check_b" type="checkbox">
+                                                                        <label for="wiz-check_b"></label>
+                                                                    </div>
+                                                                    <span class="material-cb-label">Locação de bens móveis</span>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="material">
+                                                                        <input id="wiz-check_c" type="checkbox">
+                                                                        <label for="wiz-check_c"></label>
+                                                                    </div>
+                                                                    <span class="material-cb-label">Aquisição de bens móveis</span>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="material">
+                                                                        <input id="wiz-check_d" type="checkbox">
+                                                                        <label for="wiz-check_d"></label>
+                                                                    </div>
+                                                                    <span class="material-cb-label">Aquisição de serviços</span>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="material">
+                                                                        <input id="wiz-check_e" type="checkbox">
+                                                                        <label for="wiz-check_e"></label>
+                                                                    </div>
+                                                                    <span class="material-cb-label">Concessão de obras públicas</span>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="material">
+                                                                        <input id="wiz-check_f" type="checkbox">
+                                                                        <label for="wiz-check_f"></label>
+                                                                    </div>
+                                                                    <span class="material-cb-label">Concessão de serviços públicos</span>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="material">
+                                                                        <input id="wiz-check_g" type="checkbox">
+                                                                        <label for="wiz-check_g"></label>
+                                                                    </div>
+                                                                    <span class="material-cb-label">Contrato de Sociedade</span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
                                                     </div>
                                                     <div class="card-footer">
                                                         <div class="stats is-hidden">
@@ -334,17 +338,17 @@
                                                                     <tr>
                                                                         <td>Objectos Complementares</td>
                                                                         <td>
-                                                                          <div class="input-w-actions">
-                                                                              <input type="text" class="form-control" id="input1">
-                                                                              <i class="fa fa-search"></i>
-                                                                          </div>
+                                                                            <div class="input-w-actions">
+                                                                                <input type="text" class="form-control" id="input1">
+                                                                                <i class="fa fa-search"></i>
+                                                                            </div>
                                                                         </td>
                                                                         <td>
-                                                                          <div class="input-w-actions">
-                                                                              <input type="text" class="form-control" id="input1">
-                                                                              <i class="fa fa-search"></i>
-                                                                              <i class="fa fa-trash" aria-hidden="true"></i>
-                                                                          </div>
+                                                                            <div class="input-w-actions">
+                                                                                <input type="text" class="form-control" id="input1">
+                                                                                <i class="fa fa-search"></i>
+                                                                                <i class="fa fa-trash" aria-hidden="true"></i>
+                                                                            </div>
                                                                         </td>
                                                                         <td>-</td>
                                                                     </tr>
@@ -389,7 +393,6 @@
 
                     </div>
                 </div>
-
             </div>
         </main>
         <nav class="app-main-nav shadow-2">
@@ -398,22 +401,22 @@
                     <p class="menu-label"><i class="fa fa-pencil" aria-hidden="true"></i>Procedimento</p>
                     <ul class="menu-list">
                         <li class="checked active">
-                            <span class="label label-primary">1</span><a href="#">Caracterização</a>
+                            <a href="#"> <span class="label label-primary">1</span> Caracterização</a>
                         </li>
                         <li>
-                            <span class="label label-primary">2</span><a href="#">Equipa</a>
+                            <a href="#"><span class="label label-primary">2</span> Equipa</a>
                         </li>
                         <li>
-                            <span class="label label-primary">3</span><a href="#">Estrutura e Condições</a>
+                            <a href="#"><span class="label label-primary">3</span> Estrutura e Condições</a>
                         </li>
                         <li>
-                            <span class="label label-primary">4</span><a href="#">Propostas</a>
+                            <a href="#"><span class="label label-primary">4</span> Propostas</a>
                         </li>
                         <li>
-                            <span class="label label-primary">5</span><a href="#">Peças do Procedimento</a>
+                            <a href="#"><span class="label label-primary">5</span> Peças do Procedimento</a>
                         </li>
                         <li>
-                            <span class="label label-primary">6</span><a class="active-link" href="#">Resumo</a>
+                            <a class="active-link" href="#"><span class="label label-primary">6</span> Resumo</a>
                         </li>
                     </ul>
                 </aside>
